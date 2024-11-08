@@ -1,0 +1,215 @@
+.heroimage {
+    background-image: url('../assets/59cfcea786465c009ce38a85c6adab04.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 860px;
+    min-width: 100% !important;
+    left: 0 !important; top: 0; right: 0 !important;
+    margin-top: 145px;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .content h1 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.1px;
+    margin-bottom: 20px;
+  }
+  
+  .content button {
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #326075;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .content button:hover {
+    background-color: #284b63;
+  }
+  
+  .cards {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+  }
+  
+  .cardSpacing {
+    margin-bottom: 30px; 
+  }
+  
+  .customCard {
+    width: 220px; 
+    height: 174px; 
+    border-radius: 5px 0px 0px 0px; 
+    background-color: var(--primary-color); 
+    opacity: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease; 
+    margin: auto; 
+  }
+  
+  .cardBody {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+.about {
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* =============================== About ==============================================*/
+.aboutP {
+    font-size: 21px;
+    font-weight: 100;
+    text-align: left;
+    color: #A6A6A6;
+}
+/*============================================ Reviews  ================================*/
+
+.comments {
+    width: 507px;
+    height: 205px;
+    padding: 20px;
+    backdrop-filter: blur(60%);
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #326075, #969696);
+    margin: 20px;
+    opacity: 1;
+  }
+  
+  .h_reviews {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .p_reviews {
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  .reviews-slider :global(.slick-dots li button:before) {
+    border: solid 1px #fff;
+    border-radius: 50%;
+    font-size: 16px;
+  }
+  
+  .reviews-slider :global(.slick-dots li.slick-active button:before) {
+    color: #fff;
+  }
+  /*============================================ serviers  ================================*/
+
+.serviertwo{
+    margin-top: 25px;
+}
+.servierthree{
+    margin-top: 45px;
+}
+
+/* ===================================================================================================================   */
+@media (max-width: 1200px) {
+  .comments {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  .serviertwo{
+      margin-top: 0;
+  }
+  .servierthree{
+      margin-top: 0;
+  }
+}
+
+@media (max-width: 988px) {
+  .content h1 {
+      
+      font-size: 28px;
+  }
+  .h_reviews{
+      font-size: 20px;
+  }
+  /* تنسيق الفقرة */
+  .content p,
+  .p_reviews {
+      font-size: 15px;
+  }
+  .card { 
+      width: 100%; 
+      height: auto; 
+  }
+  .comments {
+      width: 100%;
+      height: auto;
+      margin: 10px 20px;
+    }
+
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav__item {
+    margin-bottom: 20px; 
+  }
+  .customCard {
+      width: 100%; 
+      height: auto; 
+    }
+
+}
+@media (max-width: 572px) {
+  .content h1 {
+      font-size: 20px;
+  }
+  
+  /* تنسيق الفقرة */
+  .content p {
+      font-size: 12px;
+  }
+  
+  /* تنسيق الزر */
+  .content button {
+      padding: 8px 30px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .comments {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+}
+  
+        
+
+  
