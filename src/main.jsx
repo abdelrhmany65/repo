@@ -7,6 +7,10 @@ import AppRouts from './AppRouts/AppRouts'
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 
+
+
+
+
 AOS.init({ 
   duration: 1200, 
   once: true, 

@@ -1,27 +1,32 @@
-import React from 'react'
-import Img from "../assets/59cfcea786465c009ce38a85c6adab04.jpg";
-import './about.css';
-
-
+import React from 'react';
+import Img from '../assets/59cfcea786465c009ce38a85c6adab04.jpg';
+import styles from './main.module.css';
+import CommoSection from '../components/ui/CommoSection';
 
 const About = () => {
   return (
-    <section className='about-us'>
-    <div className='title'>
-      <p>About Us</p>
-    </div>
-
-  <div className='about-1'>
-      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt, quod facere commodi ab nam corrupti cumque fuga totam maxime necessitatibus iusto dolores veniam odio adipisci dolor doloribus aut voluptas!</p>
-      <img src={Img } className='right-image'/>
-  </div>
-  <div className='about-1'>
+    
+    <section className={styles.aboutUs}>
       
-      <img src={Img } className='left-image'/>
-      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt, quod facere commodi ab nam corrupti cumque fuga totam maxime necessitatibus iusto dolores veniam odio adipisci dolor doloribus aut voluptas!</p>
-  </div>
-  </section>
-  )
-}
+      <div className={styles.abouttitle}>
+        <p>About Us</p>
+      </div>
+      <CommoSection title="who we are" />
+      <div className={styles.aboutSection}>
+        <p className={styles.abouttextContent}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt, quod facere commodi ab nam corrupti cumque fuga totam maxime necessitatibus iusto dolores veniam odio adipisci dolor doloribus aut voluptas!
+        </p>
+        <img src={Img} alt="About Us" className={styles.aboutimage} />
+      </div>
 
-export default About
+      <div className={styles.aboutSection}>
+        <img src={Img} alt="About Us" className={styles.aboutimage} />
+        <p className={styles.abouttextContent}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt, quod facere commodi ab nam corrupti cumque fuga totam maxime necessitatibus iusto dolores veniam odio adipisci dolor doloribus aut voluptas!
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default About;

@@ -72,14 +72,14 @@ const Home = () => {
 
 
       {/* About Section */}
-      <div className={style.about}  data-aos="fade-down">
+      <div className={`${style.about}`}  data-aos="fade-down">
         <CommoSection title="About Us" />
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-6 col-md-12 text-start">
               <p className={style.aboutP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin“Lorem ipsum dolor sit amet</p>
               <Link to="/about">
-                <button className="btn">See More</button>
+                <button className="btn my-4">See More</button>
               </Link>
             </div>
             <div className="col-lg-6 col-md-12">

@@ -16,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   text-transform: capitalize;
   min-width: 320px;
   min-height: 100vh;
@@ -25,6 +25,7 @@ body {
   background-color: var(--background-color);
   color: var(--white-color);
   font-family: 'Roboto Serif', serif;
+  overflow-x: hidden;
 }
 
 h1 {

@@ -107,13 +107,22 @@ a:hover .rightBox {
   transform: scale(1.2);  
   opacity: 0.8;  
 }
-
+.global{
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  width: 24px;
+  margin-right: 5px;
+}
 
 
 /* إضافة وسائط الإعلام لجعل التوب هيدر متجاوب */
-@media (max-width: 768px) {
+@media (max-width: 997px) {
   .navbar-nav .nav__item {
     margin-bottom: 20px; 
+  }
+  .offcanvas-header .logo {
+    width: 120px; /* حجم مخصص للشاشات الصغيرة */
+    height: auto;
   }
 
   .socialIcons {
@@ -130,5 +139,8 @@ a:hover .rightBox {
 
   .socialIcons a {
     margin: 0 10px;
+  }
+  .textSpan {
+    font-size: 7px;
   }
 }
