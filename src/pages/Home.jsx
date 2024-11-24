@@ -4,10 +4,15 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import CommoSection from '../components/ui/CommoSection';
 import hero from "../assets/59cfcea786465c009ce38a85c6adab04.jpg";
+import Videohero from "../assets/MP4 01.mp4";
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderOurTeam from '../components/SliderOurTeam';
 import Reviews from '../components/Reviews';
+import ButtonWithEffects from '../components/ui/ButtonWithEffects';
+
 
 const Home = () => {
   const settings = {
@@ -34,40 +39,44 @@ const Home = () => {
 
   return (
     <>
-<div className={`${style.heroimage} d-flex flex-column justify-content-center align-items-center text-center`}  data-aos="fade-down">
-  <div className={style.content}>
-    <h1>Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eos optio voluptate nam deleniti officia ipsam, nihil assumenda.</p>
-    <Link to="/contactus">
-      <button>Contact Us</button>
-    </Link>
-  </div>
-  <div className={`${style.cards} container mt-5`}>
-    <div className="row justify-content-center">
-      <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
-        <div className={`card text-center border-0 ${style.customCard}`}>
-          <div className={style.cardBody}>
-            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div className={`${style.heroimage} d-flex flex-column justify-content-center align-items-center text-center`} data-aos="fade-down">
+      <video className={style.videoBackground} autoPlay muted loop>
+        <source src={Videohero} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <div className={style.content}>
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eos optio voluptate nam deleniti officia ipsam, nihil assumenda.</p>
+        <Link to="/contactus">
+          <button>Contact Us</button>
+        </Link>
+      </div> */}
+      <div className={`${style.cards} container mt-5`}>
+        <div className="row justify-content-center">
+          <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
+            <div className={`card text-center border-0 ${style.customCard}`}>
+              <div className={style.cardBody}>
+                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
-        <div className={`card text-center border-0 ${style.customCard}`}>
-          <div className={style.cardBody}>
-            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
+            <div className={`card text-center border-0 ${style.customCard}`}>
+              <div className={style.cardBody}>
+                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
-        <div className={`card text-center border-0 ${style.customCard}`}>
-          <div className={style.cardBody}>
-            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className={`col-12 col-md-4 mb-3 ${style.cardSpacing}`}>
+            <div className={`card text-center border-0 ${style.customCard}`}>
+              <div className={style.cardBody}>
+                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
@@ -79,10 +88,10 @@ const Home = () => {
             <div className="col-lg-6 col-md-12 text-start">
               <p className={style.aboutP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin“Lorem ipsum dolor sit amet</p>
               <Link to="/about">
-                <button className="btn my-4">See More</button>
+                <ButtonWithEffects text="About Us"/>
               </Link>
             </div>
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12 my-3">
               <img src={hero} alt="about" className="img-fluid" />
             </div>
           </div>
@@ -97,7 +106,7 @@ const Home = () => {
             <div className="col-lg-5 col-md-12 text-start mb-4">
               <p className={style.aboutP}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin“Lorem ipsum dolor sit amet, consectetur adipiscing elit. “Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <Link to="/services">
-                <button className="btn">See More</button>
+                <ButtonWithEffects text="Services"/>
               </Link>
             </div>
             <div className="col-lg-7 col-md-12">
@@ -171,6 +180,8 @@ const Home = () => {
 
       <SliderOurTeam data-aos="fade-down"/>
       <Reviews data-aos="fade-down"/>
+
+      
     </>
   );
 };

@@ -1,7 +1,5 @@
 .heroimage {
-  background-image: url('../assets/59cfcea786465c009ce38a85c6adab04.jpg'); 
-  background-size: cover;
-  background-position: center;
+
   height: 90vh;
   min-width: 100% !important;
   left: 0 !important; top: 0 !important; right: 0 !important;
@@ -9,6 +7,16 @@
   color: white;
   position: relative;
   text-align: center;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
 }
 
 .content {
@@ -184,7 +192,11 @@
   margin: 20px;
   border-radius: 5px;
 }
+/* ============================================== Services__ Page =====================================================================   */
 
+.Services__style{
+  padding-top: 150px;
+}
 
 /* ============================================== Error Page =====================================================================   */
 .errorContainer {
@@ -311,7 +323,16 @@
     height: auto;
     margin: 10px 20px;
   }
+  .cards {
+    position: absolute;
+    bottom: -150px;
+  }
+  .aboutUs{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
+  }
 }
 @media (max-width: 768px) {
 .navbar-nav .nav__item {
@@ -320,6 +341,11 @@
 .customCard {
     width: 100%; 
     height: auto; 
+  }
+  .aboutUs{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .abouttitle {
     height: 200px;

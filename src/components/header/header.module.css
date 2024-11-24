@@ -115,31 +115,28 @@ a:hover .rightBox {
 }
 
 
-/* إضافة وسائط الإعلام لجعل التوب هيدر متجاوب */
+
 @media (max-width: 997px) {
   .navbar-nav .nav__item {
     margin-bottom: 20px; 
   }
   .offcanvas-header .logo {
-    width: 120px; /* حجم مخصص للشاشات الصغيرة */
+    width: 120px; 
     height: auto;
   }
 
   .socialIcons {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: black; 
+    background-color: black;
     padding: 10px 0;
     display: flex;
     justify-content: space-around;
-    z-index: 1000; 
+    z-index: 1000;
   }
-
+  
   .socialIcons a {
     margin: 0 10px;
   }
+  
   .textSpan {
     font-size: 7px;
   }

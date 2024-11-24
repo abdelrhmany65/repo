@@ -1,0 +1,88 @@
+.commom__section 
+{
+    margin: 50px 0; 
+}
+.commom__section__hero{
+    display: flex;
+    justify-content: center; /* لضبط المحتوى أفقياً في المنتصف */
+    align-items: center; /* لضبط المحتوى عمودياً في المنتصف */
+    height: 100%;
+}
+h2 {
+  background: linear-gradient(to right, white, #326075); 
+  -webkit-background-clip: text; 
+  color: transparent; 
+  padding: 20px 0;
+  border-radius: 5px; 
+  text-align: center;
+  font-size: 48px;
+
+}
+  
+/* =============================================== BUTTON ============================================   */
+
+.buttonContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  background-color: #222;
+  border: 1px solid #148ef3;
+  color: #fff;
+  padding: 13px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  margin: 10px 0;
+  &:hover {
+    background-color: #148ef3;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.buttonEffectContainer {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #148ef3;
+  transform: scale(1);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &.topLeft {
+    top: 40%;
+    left: 27%;
+  }
+
+  &.bottomRight {
+    bottom: 40%;
+    right: 27%;
+  }
+
+
+  &.reset {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+/* ========================================== media ====================================  */
+

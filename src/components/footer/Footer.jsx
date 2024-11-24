@@ -61,7 +61,9 @@ function Footer() {
               <div className="centerer mt-2">
                 <div className="wrap">
                 <Link to="/contactus">
-                  <button className='btn my-4'>send to</button>
+                  <button className='btn my-4'>
+                    <span>send to</span>
+                  </button>
                 </Link>
                 </div>
               </div>

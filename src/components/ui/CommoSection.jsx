@@ -1,4 +1,4 @@
-import style from "./CommoSection.module.css";
+import style from "./ui.module.css";
 
 const CommoSection = ({ title }) => {
     return (

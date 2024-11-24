@@ -6,8 +6,10 @@ import styles from './header.module.css';
 import logAr from "../../assets/Untitled.png";
 import logEn from "../../assets/Untitled2.png";
 import 'flag-icons/css/flag-icons.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // تأكد من تضمين JavaScript الخاص بـ Bootstrap
 import i18n from "../i18/i18n";
+import insta from '../../assets/Group 107.png';
+import face from '../../assets/Group 108.png';
+import linked from '../../assets/iconfinder-social-media-applications-14linkedin-4102586_113786 (1).png';
 
 const nav__link = [
   { path: '/', display: 'Home' },
@@ -49,6 +51,7 @@ const Header = () => {
   };
 
   return (
+    
     <header className='fixed-top bg-black'>
       <TopHeader language={language} handleLanguageChange={handleLanguageChange} />
       <nav className="navbar navbar-expand-lg">
@@ -120,6 +123,21 @@ const Header = () => {
               </li>
             ))}
           </ul>
+
+            {/* Social Icons داخل offcanvas */}
+  <div className="d-flex justify-content-around mt-4 d-lg-none">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <img src={face} alt="facebook" className={styles.rightBox} />
+    </a>
+    <a href="https://www.linkedin.com/company/fuzik/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+      <img src={linked} alt="linkedin" className={styles.rightBox} />
+    </a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <img src={insta} alt="instagram" className={styles.rightBox} />
+    </a>
+  </div>
+
+
         </div>
       </div>
 

@@ -5,6 +5,10 @@ import Error from '../pages/Error';
 
 // استيراد مكون التحميل المخصص
 import LoadingComponent from '../components/ui/LoadingComponent';
+import WebDeveloper from '../pages/projectsViwe/WebDeveloper';
+import Gaming from '../pages/projectsViwe/Gaming';
+import Marketing from '../pages/projectsViwe/Marketing';
+import WebDesign from '../pages/projectsViwe/WebDesign';
 
 // تحميل الصفحات بشكل غير متزامن باستخدام `lazy`
 const Home = lazy(() => import('../pages/Home'));
@@ -65,6 +69,38 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<LoadingComponent />}>
             <ContactUs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "Services/webdevloper",
+        element: (
+          <Suspense fallback={<LoadingComponent />}>
+            <WebDeveloper />
+          </Suspense>
+        ),
+      },
+      {
+        path: "Services/gamming",
+        element: (
+          <Suspense fallback={<LoadingComponent />}>
+            <Gaming />
+          </Suspense>
+        ),
+      },
+      {
+        path: "Services/marketing",
+        element: (
+          <Suspense fallback={<LoadingComponent />}>
+            <Marketing />
+          </Suspense>
+        ),
+      },
+      {
+        path: "Services/webdesign",
+        element: (
+          <Suspense fallback={<LoadingComponent />}>
+            <WebDesign />
           </Suspense>
         ),
       },

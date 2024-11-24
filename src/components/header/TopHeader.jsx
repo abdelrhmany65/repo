@@ -31,7 +31,7 @@ const TopHeader = ({ language, handleLanguageChange }) => {
             </div>
           </div>
 
-          <div className="right d-flex align-items-center justify-content-center">
+          <div className="right d-flex align-items-center justify-content-center d-none d-lg-flex">
             <div className={`icons-right ${styles.socialIcons}`}>
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='mx-1'>
                 <img src={face} alt="facebook" className={styles.rightBox} />
@@ -43,7 +43,11 @@ const TopHeader = ({ language, handleLanguageChange }) => {
                 <img src={insta} alt="instagram" className={styles.rightBox} />
               </a>
 
-              <div className="d-lg-none align-items-center justify-content-center">
+
+            </div>
+          </div>
+
+          <div className="d-lg-none align-items-center justify-content-center">
                 <div className="dropdown">
                   <button
                     className="d-flex align-items-center border-0 bg-black text-light"
@@ -69,8 +73,6 @@ const TopHeader = ({ language, handleLanguageChange }) => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import style from './main.module.css';
+
 
 const OurTeam = () => {
   return (
-    <div>OurTeam</div>
+    <div className={style.ouer}>
+      OurTeam
+    </div>
   )
 }
 
